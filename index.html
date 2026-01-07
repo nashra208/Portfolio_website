@@ -4,545 +4,742 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >1337-NA5HRA <3 </title>
-    <!-- favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        :root {
-            --bg: #050407;
-            --panel: rgba(0, 0, 0, 0.45);
-            --neon: #39ff14;
-            --neon-shade1: #14ff86;
-            --cyber: #00ffff;
-            --muted: #9aa0a6;
-            --glass: rgba(255, 255, 255, 0.06);
-            --accent: #0f0f0f;
-            --mono: "Courier New", Courier, monospace;
-            /* --mono: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-        }
+    <title>1337-NA5HRA <3 </title>
+            <!-- favicon -->
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <style>
+                :root {
+                    --bg: #050407;
+                    --panel: rgba(0, 0, 0, 0.45);
+                    --neon: #39ff14;
+                    --neon-shade1: #14ff86;
+                    --cyber: #00ffff;
+                    --muted: #9aa0a6;
+                    --glass: rgba(255, 255, 255, 0.06);
+                    --accent: #0f0f0f;
+                    --mono: "Courier New", Courier, monospace;
+                    /* --mono: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+                }
 
-        * {
-            margin: 0rem;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+                * {
+                    margin: 0rem;
+                    box-sizing: border-box;
+                    scroll-behavior: smooth;
+                }
 
-        /* Scrollbar width */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
+                /* Scrollbar width */
+                ::-webkit-scrollbar {
+                    width: 10px;
+                }
 
-        /* Track (background) */
-        ::-webkit-scrollbar-track {
-            background: var(--bg);
-        }
+                /* Track (background) */
+                ::-webkit-scrollbar-track {
+                    background: var(--bg);
+                }
 
-        /* Thumb (the draggable part) */
-        ::-webkit-scrollbar-thumb {
-            background-color: var(--neon);
-            border-radius: 10px;
-            border: 2px solid var(--bg);
-        }
+                /* Thumb (the draggable part) */
+                ::-webkit-scrollbar-thumb {
+                    background-color: var(--neon);
+                    border-radius: 10px;
+                    border: 2px solid var(--bg);
+                }
 
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            font-family: var(--mono);
-            background: var(--bg);
-        }
-
-        .portfolio {
-            color: white;
-        }
-
-        /* navbar css */
-        .navbar {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border-bottom: 1px solid var(--neon);
-            backdrop-filter: blur(4px);
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
+                html,
+                body {
+                    height: 100%;
+                    overflow-x: hidden;
+                    max-width: 100%;
+                    margin: 0;
+                    font-family: var(--mono);
+                    background: var(--bg);
+                }
 
 
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            padding: 6px 14px;
-            border: 1px solid rgba(57, 255, 20, 0.2);
-            border-radius: 9999px;
-            transition: all 0.25s ease;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+                .portfolio {
+                    color: white;
+                }
 
-        .navbar a:hover {
-            border-color: var(--neon);
-            box-shadow: 0 0 12px var(--neon);
-            padding: 6px 14px;
-            border-radius: 9999px;
-            transform: translateY(-2px);
-        }
+                /* navbar css */
+                .navbar {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    border-bottom: 1px solid var(--neon);
+                    backdrop-filter: blur(4px);
+                    position: sticky;
+                    top: 0;
+                    z-index: 999;
+                }
 
-        /*hero-section */
-        .hero-section {
-            display: flex;
-            align-items: flex-end;
-            background-image: url('banner.gif');
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 500px;
-        }
 
-        .title-wrap {
-            backdrop-filter: blur(4px);
-            margin-bottom: 20px;
-            margin-left: 20px;
-            padding: 12px 18px;
-            border-radius: 8px;
-            background: var(--panel);
-        }
 
-        .brand {
-            font-size: 22px;
-            letter-spacing: 2px;
-            color: var(--neon);
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
+                .navbar a {
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    padding: 6px 14px;
+                    border: 1px solid rgba(57, 255, 20, 0.2);
+                    border-radius: 9999px;
+                    transition: all 0.25s ease;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
 
-        .brand .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 3px;
-            background: var(--neon);
-            box-shadow: 0 0 12px rgba(57, 255, 20, 0.5),
-                inset 0 0 6px rgba(255, 255, 255, 0.02);
-        }
+                .navbar a:hover {
+                    border-color: var(--neon);
+                    box-shadow: 0 0 12px var(--neon);
+                    padding: 6px 14px;
+                    border-radius: 9999px;
+                    transform: translateY(-2px);
+                }
 
-        h1.port-title {
-            margin: 6px 0 2px;
-            font-size: 28px;
-        }
+                /*hero-section */
+                .hero-section {
+                    display: flex;
+                    align-items: flex-end;
+                    background-image: url('banner.gif');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 500px;
+                }
 
-        /* ABOUT*/
-        .about {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 15px auto;
-            max-width: 1200px;
-            color: white;
-        }
+                .title-wrap {
+                    backdrop-filter: blur(4px);
+                    margin-bottom: 20px;
+                    margin-left: 20px;
+                    padding: 12px 18px;
+                    border-radius: 8px;
+                    background: var(--panel);
+                }
 
-        .about-me p {
-            color: white;
-            font-size: 14px;
-            margin-top: 10px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            padding-left: 12px;
-            line-height: 25px;
-            border-left: 2px solid rgba(57, 255, 20, 0.3);
-            /*margin-top: 5px;
+                .brand {
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    color: var(--neon);
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                }
+
+                .brand .dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 3px;
+                    background: var(--neon);
+                    box-shadow: 0 0 12px rgba(57, 255, 20, 0.5),
+                        inset 0 0 6px rgba(255, 255, 255, 0.02);
+                }
+
+                h1.port-title {
+                    margin: 6px 0 2px;
+                    font-size: 28px;
+                }
+
+                /* ABOUT*/
+                .about {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                    margin: 15px auto;
+                    max-width: 1200px;
+                    color: white;
+                }
+
+                .about-me p {
+                    color: white;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    padding-left: 12px;
+                    line-height: 25px;
+                    border-left: 2px solid rgba(57, 255, 20, 0.3);
+                    /*margin-top: 5px;
             padding: 5px;
             margin-left: 15px; 
             */
-        }
+                }
 
-        .about-tryhackme-badge {
-            width: 330px;
-            height: 100px;
-            border: transparent;
-            margin-top: 10px;
-        }
+                .about-tryhackme-badge {
+                    width: 330px;
+                    height: 100px;
+                    border: transparent;
+                    margin-top: 10px;
+                }
 
-        .about-tryhackme-badge:hover {
-            box-shadow: 0 0 25px var(--neon);
-            border-color: var(--neon);
-            transform: translateY(-3px);
-            transition: all 0.3s ease;
-        }
+                .about-tryhackme-badge:hover {
+                    box-shadow: 0 0 25px var(--neon);
+                    border-color: var(--neon);
+                    transform: translateY(-3px);
+                    transition: all 0.3s ease;
+                }
 
-        /* Base card style — single source of truth for shared look */
-        .card {
-            /*background: rgba(0, 255, 100, 0.05); */
-            border: 1px solid rgba(57, 255, 20, 0.4);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(6px);
-            transition: 0.3s ease;
-        }
-
-        .content {
-            margin: 50px;
-            padding: 50px;
-        }
-
-        .symbol {
-            background-color: var(--panel);
-            background-image: url(./anon.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 40px;
-            width: 40px;
-            border-radius: 100%;
-        }
-
-        .image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .contact-card {
-            display: flex;
-            align-items: center;
-            margin-bottom: 16px;
-            padding: 18px 24px;
-            border-radius: 12px;
-            background: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(57, 255, 20, 0.15);
-            box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
-            transition: all 0.3s ease;
-        }
-
-        .contact-card:hover {
-            box-shadow: 0 0 25px var(--neon);
-            border-color: var(--neon);
-            transform: translateY(-3px);
-        }
-
-        .contact-info h3 {
-            margin: 0;
-            font-size: 16px;
-            font-weight: bold;
-            color: var(--neon);
-        }
-
-        .contact-info p {
-            margin: 2px 0 0;
-            font-size: 14px;
-            color: var(--muted);
-        }
-
-        /* skill section styling */
-
-        .skills-section {
-            margin-bottom: 250px;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: 300px 800px;
-            grid-auto-rows: 250px;
-            row-gap: 10px;
-        }
-
-        .skill_items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .skill_gif {
-            width: 300px;
-            height: 100%;
-            background-image: url(skills.gif);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        /* Project section styling*/
-        .projects {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            margin: 15px auto;
-            max-width: 1200px;
-            color: white;
-        }
-
-        .project-heading {
-            text-align: center;
-        }
-
-        .project-card img {
-            display: block;
-            height: 400px;
-            width: 300px;
-            margin: 10px auto;
-        }
+                /* Base card style — single source of truth for shared look */
+                .card {
+                    /*background: rgba(0, 255, 100, 0.05); */
+                    border: 1px solid rgba(57, 255, 20, 0.4);
+                    padding: 20px;
+                    border-radius: 10px;
+                    backdrop-filter: blur(6px);
+                    transition: 0.3s ease;
+                }
 
 
-        .project-card {
-            cursor: pointer;
-        }
 
-        /* Hover behaviour for project cards */
-        .project-card:hover {
-            background: rgba(0, 255, 100, 0.12);
-            border-color: var(--neon);
-            box-shadow: 0 0 15px var(--neon), 0 0 30px rgba(57, 255, 20, 0.4);
-            transform: translateY(-3px);
-        }
+                .symbol {
+                    background-color: var(--panel);
+                    background-image: url(./anon.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                }
 
-        .project-desc {
-            color: white;
-            font-size: 14px;
-            margin-top: 10px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            padding-left: 12px;
-            line-height: 25px;
-            border-left: 2px solid rgba(57, 255, 20, 0.3);
-        }
+                .image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                }
 
-        .project-card-button {
-            width: 120px;
-            height: 40px;
-            text-decoration: none;
-            border-radius: 999px;
-            background: transparent;
-            color: var(--neon);
-            border: 2px solid var(--neon);
-            cursor: pointer;
-            font-family: var(--mono);
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px;
-            transition: 0.3s;
-        }
+                .contact-card {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    padding: 18px 24px;
+                    border-radius: 12px;
+                    background: rgba(0, 0, 0, 0.6);
+                    border: 1px solid rgba(57, 255, 20, 0.15);
+                    box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
+                    transition: all 0.3s ease;
+                }
 
-        .project-card-btn-a {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            text-decoration: none;
-        }
+                .contact-card:hover {
+                    box-shadow: 0 0 25px var(--neon);
+                    border-color: var(--neon);
+                    transform: translateY(-3px);
+                }
 
-        .project-card-button i {
-            color: var(--neon);
-            text-shadow: 0 0 8px var(--neon);
-        }
+                .contact-info h3 {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: var(--neon);
+                }
 
-        .project-card-button:hover {
-            box-shadow: 0 0 12px var(--neon);
-            transform: scale(1.05);
-        }
+                .contact-info p {
+                    margin: 2px 0 0;
+                    font-size: 14px;
+                    color: var(--muted);
+                }
 
-        /* blog section styling */
+                /* skill section styling */
 
-        .blog-link {
-            border: 1px solid rgba(57, 255, 20, 0.4);
-            padding: 3px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            backdrop-filter: blur(6px);
-            transition: 0.3s ease;
-        }
+                .skills-section {
+                    margin-bottom: 250px;
+                }
 
-        .blog-link a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 6px 0;
-            /* gives vertical spacing so badges don't touch borders */
-        }
+                .skills {
+                    display: grid;
+                    grid-template-columns: 300px 800px;
+                    grid-auto-rows: 250px;
+                    row-gap: 10px;
+                }
 
-        .blog-link:hover {
-            box-shadow: 0 0 25px var(--neon);
-            border-color: var(--neon);
-            transform: translateY(-3px);
-        }
+                .skill_items {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
 
-        .link-img {
-            width: 10px;
-            height: 10px;
-        }
+                .skill_gif {
+                    width: 300px;
+                    height: 100%;
+                    background-image: url(skills.gif);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
 
-        .blog-link-section a {
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-            margin-top: 10px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            padding-left: 12px;
+                /* Project section styling*/
+                .projects {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 20px;
+                    margin: 15px auto;
+                    max-width: 1200px;
+                    color: white;
+                }
 
-        }
+                .project-heading {
+                    text-align: center;
+                }
 
-        .blog-badge {
-            display: inline-block;
-            font-size: 12px;
-            padding: 4px 8px;
-            border-radius: 6px;
-            background: rgba(0, 0, 0, 0.25);
-            border: 1px solid rgba(0, 255, 255, 0.06);
-            color: var(--neon);
-            margin-left: 6px;
-            white-space: nowrap;
-        }
+                .project-card img {
+                    display: block;
+                    height: 400px;
+                    width: 300px;
+                    margin: 10px auto;
+                }
 
-        .certificates {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            ;
-        }
 
-        .cert {
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 500px;
-            width: 100%;
-        }
+                .project-card {
+                    cursor: pointer;
+                }
 
-        .cert:hover {
-            background-color: rgba(0, 255, 100, 0.12);
-            /* only adds color overlay */
-            border-color: var(--neon);
-            box-shadow: 0 0 15px var(--neon),
-                0 0 30px rgba(57, 255, 20, 0.4);
-            transform: translateY(-5px);
-            /* small lift */
-        }
+                /* Hover behaviour for project cards */
+                .project-card:hover {
+                    background: rgba(0, 255, 100, 0.12);
+                    border-color: var(--neon);
+                    box-shadow: 0 0 15px var(--neon), 0 0 30px rgba(57, 255, 20, 0.4);
+                    transform: translateY(-3px);
+                }
 
-        .education {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            border: 2px solid #39ff14;
-            padding: 20px;
-            font-family: var(--mono);
-            background: rgba(0, 0, 0, 0.6);
-        }
+                .project-desc {
+                    color: white;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    padding-left: 12px;
+                    line-height: 25px;
+                    border-left: 2px solid rgba(57, 255, 20, 0.3);
+                }
 
-        .education-logo {
-            background-image: url("kali_linux.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 250px;
-            margin-top: 40px;
-        }
+                .project-card-button {
+                    width: 120px;
+                    height: 40px;
+                    text-decoration: none;
+                    border-radius: 999px;
+                    background: transparent;
+                    color: var(--neon);
+                    border: 2px solid var(--neon);
+                    cursor: pointer;
+                    font-family: var(--mono);
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px;
+                    transition: 0.3s;
+                }
 
-        .education-details {
-            padding-left: 20px;
-            font-size: 1rem;
-            font-family: var(--mono);
-        }
+                .project-card-btn-a {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                    text-decoration: none;
+                }
 
-        .education-bottom {
-            grid-column: 1 / 3;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            font-family: var(--mono);
-            font-size: 0.9rem;
-        }
+                .project-card-button i {
+                    color: var(--neon);
+                    text-shadow: 0 0 8px var(--neon);
+                }
 
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            color: var(--muted);
-            font-size: 20px;
-        }
+                .project-card-button:hover {
+                    box-shadow: 0 0 12px var(--neon);
+                    transform: scale(1.05);
+                }
 
-        /* KEY FRAMES */
-        @keyframes glitch {
-            0% {
-                text-shadow: 3px 0 red, -3px 0 blue;
-            }
+                /* blog section styling */
 
-            25% {
-                text-shadow: -3px -1px red, 3px 2px blue;
-            }
+                .blog-link {
+                    border: 1px solid rgba(57, 255, 20, 0.4);
+                    padding: 3px;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    backdrop-filter: blur(6px);
+                    transition: 0.3s ease;
+                }
 
-            50% {
-                text-shadow: 3px 1px red, -4px -2px blue;
-            }
+                .blog-link a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 6px 0;
+                    /* gives vertical spacing so badges don't touch borders */
+                }
 
-            75% {
-                text-shadow: -2px 2px red, 2px -2px blue;
-            }
+                .blog-link:hover {
+                    box-shadow: 0 0 25px var(--neon);
+                    border-color: var(--neon);
+                    transform: translateY(-3px);
+                }
 
-            100% {
-                text-shadow: -3px 0 red, 3px 0 blue;
-            }
-        }
+                .link-img {
+                    width: 10px;
+                    height: 10px;
+                }
 
-        .glitch {
-            animation: glitch 0.2s infinite;
-        }
+                .blog-link-section a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    padding-left: 12px;
 
-        @keyframes flicker {
-            0% {
-                opacity: 1;
-                text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
-            }
+                }
 
-            5% {
-                opacity: 0.2;
-                text-shadow: none;
-            }
+                .blog-badge {
+                    display: inline-block;
+                    font-size: 12px;
+                    padding: 4px 8px;
+                    border-radius: 6px;
+                    background: rgba(0, 0, 0, 0.25);
+                    border: 1px solid rgba(0, 255, 255, 0.06);
+                    color: var(--neon);
+                    margin-left: 6px;
+                    white-space: nowrap;
+                }
 
-            8% {
-                opacity: 1;
-                text-shadow: 0 0 14px rgba(57, 255, 20, 0.9);
-            }
+                .certificates {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 8px;
 
-            11% {
-                opacity: 0.6;
-                text-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
-            }
+                }
 
-            100% {
-                opacity: 1;
-                text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
-            }
-        }
+                .cert {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 500px;
+                    width: 100%;
+                }
 
-        .flicker {
-            text-align: center;
-            margin: 10px;
-            font-size: 20px;
-            color: var(--neon);
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            animation: flicker 2s linear infinite;
-        }
+                .cert:hover {
+                    background-color: rgba(0, 255, 100, 0.12);
+                    /* only adds color overlay */
+                    border-color: var(--neon);
+                    box-shadow: 0 0 15px var(--neon),
+                        0 0 30px rgba(57, 255, 20, 0.4);
+                    transform: translateY(-5px);
+                    /* small lift */
+                }
 
-        @keyframes blink {
-            from {
-                opacity: 1;
-            }
+                .education {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    border: 2px solid #39ff14;
+                    padding: 20px;
+                    font-family: var(--mono);
+                    background: rgba(0, 0, 0, 0.6);
+                }
 
-            to {
-                opacity: 0;
-            }
-        }
+                .education-logo {
+                    background-image: url("kali_linux.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 250px;
+                    margin-top: 40px;
+                }
 
-        .blink {
-            animation: blink 0.7s infinite alternate;
-        }
-    </style>
+                .education-details {
+                    padding-left: 20px;
+                    font-size: 1rem;
+                    font-family: var(--mono);
+                }
+
+                .education-bottom {
+                    grid-column: 1 / 3;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    font-family: var(--mono);
+                    font-size: 0.9rem;
+                }
+
+                footer {
+                    margin-top: 50px;
+                    text-align: center;
+                    color: var(--muted);
+                    font-size: 20px;
+                }
+
+                /* KEY FRAMES */
+                @keyframes glitch {
+                    0% {
+                        text-shadow: 3px 0 red, -3px 0 blue;
+                    }
+
+                    25% {
+                        text-shadow: -3px -1px red, 3px 2px blue;
+                    }
+
+                    50% {
+                        text-shadow: 3px 1px red, -4px -2px blue;
+                    }
+
+                    75% {
+                        text-shadow: -2px 2px red, 2px -2px blue;
+                    }
+
+                    100% {
+                        text-shadow: -3px 0 red, 3px 0 blue;
+                    }
+                }
+
+                .glitch {
+                    animation: glitch 0.2s infinite;
+                }
+
+                @keyframes flicker {
+                    0% {
+                        opacity: 1;
+                        text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
+                    }
+
+                    5% {
+                        opacity: 0.2;
+                        text-shadow: none;
+                    }
+
+                    8% {
+                        opacity: 1;
+                        text-shadow: 0 0 14px rgba(57, 255, 20, 0.9);
+                    }
+
+                    11% {
+                        opacity: 0.6;
+                        text-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
+                    }
+                }
+
+                .flicker {
+                    text-align: center;
+                    margin: 10px;
+                    font-size: 20px;
+                    color: var(--neon);
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    animation: flicker 2s linear infinite;
+                }
+
+                @keyframes blink {
+                    from {
+                        opacity: 1;
+                    }
+
+                    to {
+                        opacity: 0;
+                    }
+                }
+
+                .blink {
+                    animation: blink 0.7s infinite alternate;
+                }
+
+                @media (max-width: 768px) {
+
+                    .navbar {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 8px;
+                        padding: 10px 0;
+                    }
+
+                    .navbar a {
+                        font-size: 12px;
+                        padding: 6px 10px;
+                        margin: 4px;
+                        letter-spacing: 1px;
+                    }
+
+                    .title-wrap {
+                        margin: 0;
+                        text-align: center;
+                    }
+
+                    .brand {
+                        justify-content: center;
+                    }
+
+                    h1.port-title {
+                        font-size: 18px;
+                        line-height: 1.3;
+                    }
+
+                    .flicker {
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                    }
+
+                    .about {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                        padding: 0 10px;
+                    }
+
+                    .about-me p {
+                        font-size: 13px;
+                        line-height: 22px;
+                        padding-left: 10px;
+                    }
+
+                    .about-tryhackme-badge {
+                        width: 100%;
+                        max-width: 300px;
+                        height: auto;
+                        display: block;
+                        margin: 15px auto;
+                    }
+
+                    .contact-card {
+                        padding: 14px 16px;
+                        gap: 12px;
+                    }
+
+                    .contact-info h3 {
+                        font-size: 14px;
+                    }
+
+                    .contact-info p {
+                        font-size: 13px;
+                    }
+
+                    .symbol {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .skills-section {
+                        margin-bottom: 20px;
+                    }
+
+                    .skills {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 5px;
+                    }
+
+                    .skill_gif {
+                        width: 100%;
+                        max-width: 320px;
+                        height: 200px;
+                    }
+
+                    .skill_items {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 8px;
+                        max-width: 100%;
+                    }
+
+                    .skill_items img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+
+                    .projects {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        margin: 3px;
+                        gap: 20px;
+                        color: white;
+                    }
+
+                    .blog-link-section a {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        gap: 6px;
+                        padding-left: 8px;
+                    }
+
+                    .blog-badge {
+                        margin-left: 0;
+                        margin-top: 4px;
+                    }
+
+                    .blog-link-section-heading {
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+
+                    .certificates {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        justify-items: center;
+                        gap: 20px;
+                        padding: 10px;
+                    }
+
+                    .cert {
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 95%;
+                        max-width: 500px;
+                        height: auto;
+                        aspect-ratio: 16 / 9;
+                    }
+
+                    .education {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                        padding: 15px;
+                        border: 2px solid #39ff14;
+                        background: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .education-logo {
+                        width: 100%;
+                        max-width: 220px;
+                        height: 180px;
+                        margin: 0 auto;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    .education-details {
+                        padding-left: 0;
+                        text-align: center;
+                        font-size: 0.9rem;
+                    }
+
+                    .education-details pre {
+                        white-space: pre-line;
+                        word-break: break-word;
+                        line-height: 1.5;
+                        font-size: 0.85rem;
+                        display: inline-block;
+                        text-align: left;
+                        margin: 0 auto;
+                        padding: 0;
+                    }
+
+                    .education-bottom {
+                        grid-column: 1 / -1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 6px;
+                        margin-top: 15px;
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+
+                }
+            </style>
 </head>
 
 <body>
@@ -744,18 +941,21 @@
                     <div class="card reveal project-card">
                         <h3 class="flicker">😈 1337-Active Directory</h3>
                         <p class="project-desc">
-                            • Built a complete Active Directory lab with a domain controller, multiple user machines, and Kali Linux as the attack platform. <span class="blink">_</span>
+                            • Built a complete Active Directory lab with a domain controller, multiple user machines,
+                            and Kali Linux as the attack platform. <span class="blink">_</span>
                             <br><br>
 
-                            • Executed 10+ real-world attacks including LLMNR/NBT-NS poisoning, SMB relay, IPv6 DNS takeover, pass-the-hash, pass-the-password, and Kerberoasting.<span
-                                class="blink">_</span> <br><br>
+                            • Executed 10+ real-world attacks including LLMNR/NBT-NS poisoning, SMB relay, IPv6 DNS
+                            takeover, pass-the-hash, pass-the-password, and Kerberoasting.<span class="blink">_</span>
+                            <br><br>
 
-                            • Implemented Active Directory hardening policies and security controls, mitigating approximately 80% of tested attack vectors.<span
-                                class="blink">_</span> <br><br>
+                            • Implemented Active Directory hardening policies and security controls, mitigating
+                            approximately 80% of tested attack vectors.<span class="blink">_</span> <br><br>
 
-                            
+
                         </p>
-                        <a href="https://medium.com/@nashra432/active-directory-lab-and-attacks-from-beginner-to-intermediate-d3234deb7c2d" class="project-card-btn-a " target="_blank">
+                        <a href="https://medium.com/@nashra432/active-directory-lab-and-attacks-from-beginner-to-intermediate-d3234deb7c2d"
+                            class="project-card-btn-a " target="_blank">
                             <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
                         </a>
 
@@ -766,14 +966,16 @@
                     <div class="card reveal project-card">
                         <h3 class="flicker">👾 SubVoid</h3>
                         <p class="project-desc">
-                            • Developed a Bash-based automation tool integrating Subfinder, Assetfinder, and Httpx, reducing manual reconnaissance effort by ~95%. <span class="blink">_</span>
+                            • Developed a Bash-based automation tool integrating Subfinder, Assetfinder, and Httpx,
+                            reducing manual reconnaissance effort by ~95%. <span class="blink">_</span>
                             <br><br>
 
-                            • Implemented domain validation, dependency checks, safe exits, structured timestamped workspaces, and multi-port scanning for large-scale discovery.<span
-                                class="blink">_</span> <br><br>
+                            • Implemented domain validation, dependency checks, safe exits, structured timestamped
+                            workspaces, and multi-port scanning for large-scale discovery.<span class="blink">_</span>
+                            <br><br>
 
-                            • Added CLI arguments, result sorting and deduplication, and optional Discord webhook alerts to improve usability and workflow efficiency. <span
-                                class="blink">_</span> <br><br>
+                            • Added CLI arguments, result sorting and deduplication, and optional Discord webhook alerts
+                            to improve usability and workflow efficiency. <span class="blink">_</span> <br><br>
                         </p>
                         <a href="https://github.com/nashra208/SubVoid" class="project-card-btn-a " target="_blank">
                             <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
@@ -784,19 +986,21 @@
                     <div class="card reveal project-card">
                         <h3 class="flicker">🧟‍♂️ Monster_logger</h3>
                         <p class="project-desc">
-                            • Implemented keystroke logging with special key handling and clipboard monitoring (text and images) using state-based duplicate prevention (~90%).
-                             <span class="blink">_</span>
+                            • Implemented keystroke logging with special key handling and clipboard monitoring (text and
+                            images) using state-based duplicate prevention (~90%).
+                            <span class="blink">_</span>
                             <br><br>
 
-                            • Extracted Windows WLAN credential information with controlled execution and an emergency F12 kill switch.<span
-                                class="blink">_</span> <br><br>
+                            • Extracted Windows WLAN credential information with controlled execution and an emergency
+                            F12 kill switch.<span class="blink">_</span> <br><br>
 
-                            • Performed structured data exfiltration via Discord webhooks, handling both JSON data and binary image uploads. <span
-                                class="blink">_</span> <br><br>
+                            • Performed structured data exfiltration via Discord webhooks, handling both JSON data and
+                            binary image uploads. <span class="blink">_</span> <br><br>
 
-                          
+
                         </p>
-                        <a href="https://github.com/nashra208/Monster_logger" class="project-card-btn-a " target="_blank">
+                        <a href="https://github.com/nashra208/Monster_logger" class="project-card-btn-a "
+                            target="_blank">
                             <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
                         </a>
 
@@ -817,7 +1021,7 @@
                     <h3 class="flicker">Blogs</h3>
                 </div>
                 <div class="blog-link-section">
-                    <h3 class="glitch" style="margin: 20px;">TryHackMe</h3>
+                    <h3 class="blog-link-section-heading glitch" style="margin: 20px;">TryHackMe</h3>
                     <p class="blog-link">
                         <a href="https://medium.com/@nashra432/intranet-tryhackme-challenge-walkthrough-f644cb785a28"
                             target="_blank">
