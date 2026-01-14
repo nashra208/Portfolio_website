@@ -4,1153 +4,1230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1337-NA5HRA <3 </title>
-            <!-- favicon -->
-            <link rel="icon" href="favicon.ico" type="image/x-icon">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-            <style>
-                :root {
-                    --bg: #050407;
-                    --panel: rgba(0, 0, 0, 0.45);
-                    --neon: #39ff14;
-                    --neon-shade1: #14ff86;
-                    --cyber: #00ffff;
-                    --muted: #9aa0a6;
-                    --glass: rgba(255, 255, 255, 0.06);
-                    --accent: #0f0f0f;
-                    --mono: "Courier New", Courier, monospace;
-                    /* --mono: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-                }
+    <title>Document</title>
+    <style>
+        :root {
+            --bg: #050407;
+            --panel: rgba(0, 0, 0, 0.45);
+            --neon: #39ff14;
+            --neon-shade1: #14ff86;
+            --cyber: #00ffff;
+            --muted: #9aa0a6;
+            --glass: rgba(255, 255, 255, 0.06);
+            --accent: #0f0f0f;
+            --mono: "Courier New", Courier, monospace;
+            /* --mono: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        }
 
-                * {
-                    margin: 0rem;
-                    box-sizing: border-box;
-                    scroll-behavior: smooth;
-                }
+        * {
+            margin: 0rem;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-                /* Scrollbar width */
-                ::-webkit-scrollbar {
-                    width: 10px;
-                }
+        /* Scrollbar width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
 
-                /* Track (background) */
-                ::-webkit-scrollbar-track {
-                    background: var(--bg);
-                }
+        /* Track (background) */
+        ::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
 
-                /* Thumb (the draggable part) */
-                ::-webkit-scrollbar-thumb {
-                    background-color: var(--neon);
-                    border-radius: 10px;
-                    border: 2px solid var(--bg);
-                }
+        /* Thumb (the draggable part) */
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--neon);
+            border-radius: 10px;
+            border: 2px solid var(--bg);
+        }
 
-                html,
-                body {
-                    height: 100%;
-                    overflow-x: hidden;
-                    max-width: 100%;
-                    margin: 0;
-                    font-family: var(--mono);
-                    background: var(--bg);
-                }
+        html,
+        body {
+            height: 100%;
+            overflow-x: hidden;
+            max-width: 100%;
+            margin: 0;
+            font-family: var(--mono);
+            background: var(--bg);
+        }
 
 
 
-                .portfolio {
-                    color: white;
-                }
+        .portfolio {
+            color: white;
+        }
 
-                /* navbar css */
-                .navbar {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    border-bottom: 1px solid var(--neon);
-                    backdrop-filter: blur(4px);
-                    position: sticky;
-                    top: 0;
-                    z-index: 999;
-                }
+        
+
+        /* navbar css */
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-bottom: 1px solid var(--neon);
+            backdrop-filter: blur(4px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
 
 
 
-                .navbar a {
-                    color: white;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: 15px;
-                    font-weight: bold;
-                    letter-spacing: 2px;
-                    padding: 6px 14px;
-                    border: 1px solid rgba(57, 255, 20, 0.2);
-                    border-radius: 9999px;
-                    transition: all 0.25s ease;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 6px 14px;
+            border: 1px solid rgba(57, 255, 20, 0.2);
+            border-radius: 9999px;
+            transition: all 0.25s ease;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
-                .navbar a:hover {
-                    border-color: var(--neon);
-                    box-shadow: 0 0 12px var(--neon);
-                    padding: 6px 14px;
-                    border-radius: 9999px;
-                    transform: translateY(-2px);
-                }
+        .navbar a:hover {
+            border-color: var(--neon);
+            box-shadow: 0 0 12px var(--neon);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            transform: translateY(-2px);
+        }
 
-                /*hero-section */
-                .hero-section {
-                    display: flex;
-                    align-items: flex-end;
-                    background-image: url('banner.gif');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    height: 500px;
-                }
+        /*hero-section */
+        .hero-section {
+            display: flex;
+            align-items: flex-end;
+            background-image: url('banner.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+        }
 
-                .title-wrap {
-                    backdrop-filter: blur(4px);
-                    margin-bottom: 20px;
-                    margin-left: 20px;
-                    padding: 12px 18px;
-                    border-radius: 8px;
-                    background: var(--panel);
-                }
+        .title-wrap {
+            backdrop-filter: blur(4px);
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            background: var(--panel);
+        }
 
-                .brand {
-                    font-size: 22px;
-                    letter-spacing: 2px;
-                    color: var(--neon);
-                    display: flex;
-                    gap: 12px;
-                    align-items: center;
-                }
+        .brand {
+            font-size: 22px;
+            letter-spacing: 2px;
+            color: var(--neon);
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
 
-                .brand .dot {
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 3px;
-                    background: var(--neon);
-                    box-shadow: 0 0 12px rgba(57, 255, 20, 0.5),
-                        inset 0 0 6px rgba(255, 255, 255, 0.02);
-                }
+        .brand .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            background: var(--neon);
+            box-shadow: 0 0 12px rgba(57, 255, 20, 0.5),
+                inset 0 0 6px rgba(255, 255, 255, 0.02);
+        }
 
-                h1.port-title {
-                    margin: 6px 0 2px;
-                    font-size: 28px;
-                }
+        h1.port-title {
+            margin: 6px 0 2px;
+            font-size: 28px;
+        }
 
-                /* ABOUT*/
-                .about {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 20px;
-                    margin: 15px auto;
-                    max-width: 1200px;
-                    color: white;
-                }
+        /* ABOUT*/
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px auto;
+            max-width: 1200px;
+            color: white;
+        }
 
-                .about-me p {
-                    color: white;
-                    font-size: 14px;
-                    margin-top: 10px;
-                    font-weight: 400;
-                    letter-spacing: 0.5px;
-                    padding-left: 12px;
-                    line-height: 25px;
-                    border-left: 2px solid rgba(57, 255, 20, 0.3);
-                    /*margin-top: 5px;
+        .about-me p {
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            padding-left: 12px;
+            line-height: 25px;
+            border-left: 2px solid rgba(57, 255, 20, 0.3);
+            /*margin-top: 5px;
             padding: 5px;
             margin-left: 15px; 
             */
-                }
-
-                .about-tryhackme-badge {
-                    width: 330px;
-                    height: 100px;
-                    border: transparent;
-                    margin-top: 10px;
-                }
-
-                .about-tryhackme-badge:hover {
-                    box-shadow: 0 0 25px var(--neon);
-                    border-color: var(--neon);
-                    transform: translateY(-3px);
-                    transition: all 0.3s ease;
-                }
-
-                /* Base card style — single source of truth for shared look */
-                .card {
-                    /*background: rgba(0, 255, 100, 0.05); */
-                    border: 1px solid rgba(57, 255, 20, 0.4);
-                    padding: 20px;
-                    border-radius: 10px;
-                    backdrop-filter: blur(6px);
-                    transition: 0.3s ease;
-                }
-
-
-
-                .symbol {
-                    background-color: var(--panel);
-                    background-image: url(./anon.png);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 100%;
-                }
-
-                .image {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 15px;
-                }
-
-                .contact-card {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 16px;
-                    padding: 18px 24px;
-                    border-radius: 12px;
-                    background: rgba(0, 0, 0, 0.6);
-                    border: 1px solid rgba(57, 255, 20, 0.15);
-                    box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
-                    transition: all 0.3s ease;
-                }
-
-                .contact-card:hover {
-                    box-shadow: 0 0 25px var(--neon);
-                    border-color: var(--neon);
-                    transform: translateY(-3px);
-                }
-
-                .contact-info h3 {
-                    margin: 0;
-                    font-size: 16px;
-                    font-weight: bold;
-                    color: var(--neon);
-                }
-
-                .contact-info p {
-                    margin: 2px 0 0;
-                    font-size: 14px;
-                    color: var(--muted);
-                }
-
-                /* skill section styling */
-
-                .skills-section {
-                    margin-bottom: 250px;
-                }
-
-                .skills {
-                    display: grid;
-                    grid-template-columns: 300px 800px;
-                    grid-auto-rows: 250px;
-                    row-gap: 10px;
-                }
-
-                .skill_items {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                }
-
-                .skill_gif {
-                    width: 300px;
-                    height: 100%;
-                    background-image: url(skills.gif);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-
-                /* Project section styling*/
-                .projects {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 20px;
-                    margin: 15px auto;
-                    max-width: 1200px;
-                    color: white;
-                }
-
-                .project-heading {
-                    text-align: center;
-                }
-
-                .project-card img {
-                    display: block;
-                    height: 400px;
-                    width: 300px;
-                    margin: 10px auto;
-                }
-
-
-                .project-card {
-                    cursor: pointer;
-                }
-
-                /* Hover behaviour for project cards */
-                .project-card:hover {
-                    background: rgba(0, 255, 100, 0.12);
-                    border-color: var(--neon);
-                    box-shadow: 0 0 15px var(--neon), 0 0 30px rgba(57, 255, 20, 0.4);
-                    transform: translateY(-3px);
-                }
-
-                .project-desc {
-                    color: white;
-                    font-size: 14px;
-                    margin-top: 10px;
-                    font-weight: 400;
-                    letter-spacing: 0.5px;
-                    padding-left: 12px;
-                    line-height: 25px;
-                    border-left: 2px solid rgba(57, 255, 20, 0.3);
-                }
-
-                .project-card-button {
-                    width: 120px;
-                    height: 40px;
-                    text-decoration: none;
-                    border-radius: 999px;
-                    background: transparent;
-                    color: var(--neon);
-                    border: 2px solid var(--neon);
-                    cursor: pointer;
-                    font-family: var(--mono);
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 10px;
-                    transition: 0.3s;
-                }
-
-                .project-card-btn-a {
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 10px;
-                    text-decoration: none;
-                }
-
-                .project-card-button i {
-                    color: var(--neon);
-                    text-shadow: 0 0 8px var(--neon);
-                }
-
-                .project-card-button:hover {
-                    box-shadow: 0 0 12px var(--neon);
-                    transform: scale(1.05);
-                }
-
-                /* blog section styling */
-
-                .blog-link {
-                    border: 1px solid rgba(57, 255, 20, 0.4);
-                    padding: 3px;
-                    margin-bottom: 10px;
-                    border-radius: 10px;
-                    backdrop-filter: blur(6px);
-                    transition: 0.3s ease;
-                }
-
-                .blog-link a {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    padding: 6px 0;
-                    /* gives vertical spacing so badges don't touch borders */
-                }
-
-                .blog-link:hover {
-                    box-shadow: 0 0 25px var(--neon);
-                    border-color: var(--neon);
-                    transform: translateY(-3px);
-                }
-
-                .link-img {
-                    width: 10px;
-                    height: 10px;
-                }
-
-                .blog-link-section a {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 14px;
-                    margin-top: 10px;
-                    font-weight: 400;
-                    letter-spacing: 0.5px;
-                    padding-left: 12px;
-
-                }
-
-                .blog-badge {
-                    display: inline-block;
-                    font-size: 12px;
-                    padding: 4px 8px;
-                    border-radius: 6px;
-                    background: rgba(0, 0, 0, 0.25);
-                    border: 1px solid rgba(0, 255, 255, 0.06);
-                    color: var(--neon);
-                    margin-left: 6px;
-                    white-space: nowrap;
-                }
-
-                .certificates {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 8px;
-
-                }
-
-                .cert {
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    height: 500px;
-                    width: 100%;
-                }
-
-                .cert:hover {
-                    background-color: rgba(0, 255, 100, 0.12);
-                    /* only adds color overlay */
-                    border-color: var(--neon);
-                    box-shadow: 0 0 15px var(--neon),
-                        0 0 30px rgba(57, 255, 20, 0.4);
-                    transform: translateY(-5px);
-                    /* small lift */
-                }
-
-                .education {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    border: 2px solid #39ff14;
-                    padding: 20px;
-                    font-family: var(--mono);
-                    background: rgba(0, 0, 0, 0.6);
-                }
-
-                .education-logo {
-                    background-image: url("kali_linux.png");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    height: 250px;
-                    margin-top: 40px;
-                }
-
-                .education-details {
-                    padding-left: 20px;
-                    font-size: 1rem;
-                    font-family: var(--mono);
-                }
-
-                .education-bottom {
-                    grid-column: 1 / 3;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 30px;
-                    font-family: var(--mono);
-                    font-size: 0.9rem;
-                }
-
-                footer {
-                    margin-top: 50px;
-                    text-align: center;
-                    color: var(--muted);
-                    font-size: 20px;
-                }
-
-                /* KEY FRAMES */
-                @keyframes glitch {
-                    0% {
-                        text-shadow: 3px 0 red, -3px 0 blue;
-                    }
-
-                    25% {
-                        text-shadow: -3px -1px red, 3px 2px blue;
-                    }
-
-                    50% {
-                        text-shadow: 3px 1px red, -4px -2px blue;
-                    }
-
-                    75% {
-                        text-shadow: -2px 2px red, 2px -2px blue;
-                    }
-
-                    100% {
-                        text-shadow: -3px 0 red, 3px 0 blue;
-                    }
-                }
-
-                .glitch {
-                    animation: glitch 0.2s infinite;
-                }
-
-                @keyframes flicker {
-                    0% {
-                        opacity: 1;
-                        text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
-                    }
-
-                    5% {
-                        opacity: 0.2;
-                        text-shadow: none;
-                    }
-
-                    8% {
-                        opacity: 1;
-                        text-shadow: 0 0 14px rgba(57, 255, 20, 0.9);
-                    }
-
-                    11% {
-                        opacity: 0.6;
-                        text-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
-                    }
-
-                    100% {
-                        opacity: 1;
-                        text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
-                    }
-                }
-
-                .flicker {
-                    text-align: center;
-                    margin: 10px;
-                    font-size: 20px;
-                    color: var(--neon);
-                    text-transform: uppercase;
-                    letter-spacing: 4px;
-                    animation: flicker 2s linear infinite;
-                }
-
-                @keyframes blink {
-                    from {
-                        opacity: 1;
-                    }
-
-                    to {
-                        opacity: 0;
-                    }
-                }
-
-                .blink {
-                    animation: blink 0.7s infinite alternate;
-                }
-
-                @media (max-width: 768px) {
-
-                    .navbar {
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        gap: 8px;
-                        padding: 10px 0;
-                    }
-
-                    .navbar a {
-                        font-size: 12px;
-                        padding: 6px 10px;
-                        margin: 4px;
-                        letter-spacing: 1px;
-                    }
-
-                    .title-wrap {
-                        margin: 0;
-                        text-align: center;
-                    }
-
-                    .brand {
-                        justify-content: center;
-                    }
-
-                    h1.port-title {
-                        font-size: 18px;
-                        line-height: 1.3;
-                    }
-
-                    .flicker {
-                        font-size: 18px;
-                        letter-spacing: 2px;
-                    }
-
-                    .about {
-                        grid-template-columns: 1fr;
-                        gap: 15px;
-                        padding: 0 10px;
-                    }
-
-                    .about-me p {
-                        font-size: 13px;
-                        line-height: 22px;
-                        padding-left: 10px;
-                    }
-
-                    .about-tryhackme-badge {
-                        width: 100%;
-                        max-width: 300px;
-                        height: auto;
-                        display: block;
-                        margin: 15px auto;
-                    }
-
-                    .contact-card {
-                        padding: 14px 16px;
-                        gap: 12px;
-                    }
-
-                    .contact-info h3 {
-                        font-size: 14px;
-                    }
-
-                    .contact-info p {
-                        font-size: 13px;
-                    }
-
-                    .symbol {
-                        width: 32px;
-                        height: 32px;
-                    }
-
-                    .skills-section {
-                        margin-bottom: 20px;
-                    }
-
-                    .skills {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 5px;
-                    }
-
-                    .skill_gif {
-                        width: 100%;
-                        max-width: 320px;
-                        height: 200px;
-                    }
-
-                    .skill_items {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        gap: 8px;
-                        max-width: 100%;
-                    }
-
-                    .skill_items img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-
-                    .projects {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        margin: 3px;
-                        gap: 20px;
-                        color: white;
-                    }
-
-                    .blog-link-section a {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        gap: 6px;
-                        padding-left: 8px;
-                    }
-
-                    .blog-badge {
-                        margin-left: 0;
-                        margin-top: 4px;
-                    }
-
-                    .blog-link-section-heading {
-                        text-align: center;
-                        margin: 20px 0;
-                    }
-
-                    .certificates {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        justify-items: center;
-                        gap: 20px;
-                        padding: 10px;
-                    }
-
-                    .cert {
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        width: 95%;
-                        max-width: 500px;
-                        height: auto;
-                        aspect-ratio: 16 / 9;
-                    }
-
-                    .education {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        gap: 20px;
-                        padding: 15px;
-                        border: 2px solid #39ff14;
-                        background: rgba(0, 0, 0, 0.6);
-                    }
-
-                    .education-logo {
-                        width: 100%;
-                        max-width: 220px;
-                        height: 180px;
-                        margin: 0 auto;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-
-                    .education-details {
-                        padding-left: 0;
-                        text-align: center;
-                        font-size: 0.9rem;
-                    }
-
-                    .education-details pre {
-                        white-space: pre-line;
-                        word-break: break-word;
-                        line-height: 1.5;
-                        font-size: 0.85rem;
-                        display: inline-block;
-                        text-align: left;
-                        margin: 0 auto;
-                        padding: 0;
-                    }
-
-                    .education-bottom {
-                        grid-column: 1 / -1;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 6px;
-                        margin-top: 15px;
-                        font-size: 0.8rem;
-                        text-align: center;
-                    }
-
-                }
-            </style>
+        }
+
+        .about-tryhackme-badge {
+            width: 330px;
+            height: 100px;
+            border: transparent;
+            margin-top: 10px;
+        }
+
+        .about-tryhackme-badge:hover {
+            box-shadow: 0 0 25px var(--neon);
+            border-color: var(--neon);
+            transform: translateY(-3px);
+            transition: all 0.3s ease;
+        }
+
+        /* Base card style — single source of truth for shared look */
+        .card {
+            /*background: rgba(0, 255, 100, 0.05); */
+            border: 1px solid rgba(57, 255, 20, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(6px);
+            transition: 0.3s ease;
+        }
+
+
+
+        .symbol {
+            background-color: var(--panel);
+            background-image: url(./anon.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding: 18px 24px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(57, 255, 20, 0.15);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            box-shadow: 0 0 25px var(--neon);
+            border-color: var(--neon);
+            transform: translateY(-3px);
+        }
+
+        .contact-info h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--neon);
+        }
+
+        .contact-info p {
+            margin: 2px 0 0;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* skill section styling */
+
+        .skills-section {
+            margin-bottom: 250px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 300px 800px;
+            grid-auto-rows: 250px;
+            row-gap: 10px;
+        }
+
+        .skill_items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill_gif {
+            width: 300px;
+            height: 100%;
+            background-image: url(skills.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Project section styling*/
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 15px auto;
+            max-width: 1200px;
+            color: white;
+        }
+
+        .project-heading {
+            text-align: center;
+        }
+
+        .project-card img {
+            display: block;
+            height: 400px;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+
+        .project-card {
+            cursor: pointer;
+        }
+
+        /* Hover behaviour for project cards */
+        .project-card:hover {
+            background: rgba(0, 255, 100, 0.12);
+            border-color: var(--neon);
+            box-shadow: 0 0 15px var(--neon), 0 0 30px rgba(57, 255, 20, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .project-desc {
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            padding-left: 12px;
+            line-height: 25px;
+            border-left: 2px solid rgba(57, 255, 20, 0.3);
+        }
+
+        .project-card-button {
+            width: 120px;
+            height: 40px;
+            text-decoration: none;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--neon);
+            border: 2px solid var(--neon);
+            cursor: pointer;
+            font-family: var(--mono);
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card-btn-a {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .project-card-button i {
+            color: var(--neon);
+            text-shadow: 0 0 8px var(--neon);
+        }
+
+        .project-card-button:hover {
+            box-shadow: 0 0 12px var(--neon);
+            transform: scale(1.05);
+        }
+
+        /* blog section styling */
+
+        .blog-link {
+            border: 1px solid rgba(57, 255, 20, 0.4);
+            padding: 3px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(6px);
+            transition: 0.3s ease;
+        }
+
+        .blog-link a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 0;
+            /* gives vertical spacing so badges don't touch borders */
+        }
+
+        .blog-link:hover {
+            box-shadow: 0 0 25px var(--neon);
+            border-color: var(--neon);
+            transform: translateY(-3px);
+        }
+
+        .link-img {
+            width: 10px;
+            height: 10px;
+        }
+
+        .blog-link-section a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            padding-left: 12px;
+
+        }
+
+        .blog-badge {
+            display: inline-block;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(0, 255, 255, 0.06);
+            color: var(--neon);
+            margin-left: 6px;
+            white-space: nowrap;
+        }
+
+        .certificates {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+
+        }
+
+        .cert {
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+        }
+
+        .cert:hover {
+            background-color: rgba(0, 255, 100, 0.12);
+            /* only adds color overlay */
+            border-color: var(--neon);
+            box-shadow: 0 0 15px var(--neon),
+                0 0 30px rgba(57, 255, 20, 0.4);
+            transform: translateY(-5px);
+            /* small lift */
+        }
+
+        .education {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid #39ff14;
+            padding: 20px;
+            font-family: var(--mono);
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .education-logo {
+            background-image: url("kali_linux.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 250px;
+            margin-top: 40px;
+        }
+
+        .education-details {
+            padding-left: 20px;
+            font-size: 1rem;
+            font-family: var(--mono);
+        }
+
+        .education-bottom {
+            grid-column: 1 / 3;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            font-family: var(--mono);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 20px;
+        }
+
+        /* KEY FRAMES */
+        @keyframes glitch {
+            0% {
+                text-shadow: 3px 0 red, -3px 0 blue;
+            }
+
+            25% {
+                text-shadow: -3px -1px red, 3px 2px blue;
+            }
+
+            50% {
+                text-shadow: 3px 1px red, -4px -2px blue;
+            }
+
+            75% {
+                text-shadow: -2px 2px red, 2px -2px blue;
+            }
+
+            100% {
+                text-shadow: -3px 0 red, 3px 0 blue;
+            }
+        }
+
+        .glitch {
+            animation: glitch 0.2s infinite;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+                text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
+            }
+
+            5% {
+                opacity: 0.2;
+                text-shadow: none;
+            }
+
+            8% {
+                opacity: 1;
+                text-shadow: 0 0 14px rgba(57, 255, 20, 0.9);
+            }
+
+            11% {
+                opacity: 0.6;
+                text-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0 0 12px rgba(57, 255, 20, 0.9);
+            }
+        }
+
+        .flicker {
+            text-align: center;
+            margin: 10px;
+            font-size: 20px;
+            color: var(--neon);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            animation: flicker 2s linear infinite;
+        }
+
+        @keyframes blink {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        .blink {
+            animation: blink 0.7s infinite alternate;
+        }
+
+        #hacked-banner {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 80;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 300ms ease;
+        }
+
+        #hacked-banner .box {
+            background: linear-gradient(90deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.45));
+            /*border: 2px solid #39FF14;*/
+            /* cyber green */
+            padding: 28px 40px;
+            border-radius: 10px;
+            box-shadow:
+                0 0 20px rgba(57, 255, 20, 0.35),
+                0 0 40px rgba(0, 255, 180, 0.15);
+            transform: translateY(0);
+        }
+
+        #hacked-banner h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 6px;
+            color: #3CFF7A;
+            /* neon green */
+            text-shadow:
+                0 0 6px rgba(60, 255, 122, 0.9),
+                0 0 16px rgba(0, 255, 180, 0.6),
+                0 0 30px rgba(0, 255, 140, 0.4);
+        }
+
+
+        #typed-text::after {
+            content: "_";
+            margin-left: 4px;
+            animation: blink 0.7s infinite alternate;
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+                padding: 10px 0;
+            }
+
+            .navbar a {
+                font-size: 12px;
+                padding: 6px 10px;
+                margin: 4px;
+                letter-spacing: 1px;
+            }
+
+            .title-wrap {
+                margin: 0;
+                text-align: center;
+            }
+
+            .brand {
+                justify-content: center;
+            }
+
+            h1.port-title {
+                font-size: 18px;
+                line-height: 1.3;
+            }
+
+            .flicker {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 0 10px;
+            }
+
+            .about-me p {
+                font-size: 13px;
+                line-height: 22px;
+                padding-left: 10px;
+            }
+
+            .about-tryhackme-badge {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                display: block;
+                margin: 15px auto;
+            }
+
+            .contact-card {
+                padding: 14px 16px;
+                gap: 12px;
+            }
+
+            .contact-info h3 {
+                font-size: 14px;
+            }
+
+            .contact-info p {
+                font-size: 13px;
+            }
+
+            .symbol {
+                width: 32px;
+                height: 32px;
+            }
+
+            .skills-section {
+                margin-bottom: 20px;
+            }
+
+            .skills {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .skill_gif {
+                width: 100%;
+                max-width: 320px;
+                height: 200px;
+            }
+
+            .skill_items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+                max-width: 100%;
+            }
+
+            .skill_items img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .projects {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 3px;
+                gap: 20px;
+                color: white;
+            }
+
+            .blog-link-section a {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 6px;
+                padding-left: 8px;
+            }
+
+            .blog-badge {
+                margin-left: 0;
+                margin-top: 4px;
+            }
+
+            .blog-link-section-heading {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .certificates {
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .cert {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 95%;
+                max-width: 500px;
+                height: auto;
+                aspect-ratio: 16 / 9;
+            }
+
+            .education {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 15px;
+                border: 2px solid #39ff14;
+                background: rgba(0, 0, 0, 0.6);
+            }
+
+            .education-logo {
+                width: 100%;
+                max-width: 220px;
+                height: 180px;
+                margin: 0 auto;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .education-details {
+                padding-left: 0;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+            .education-details pre {
+                white-space: pre-line;
+                word-break: break-word;
+                line-height: 1.5;
+                font-size: 0.85rem;
+                display: inline-block;
+                text-align: left;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+            .education-bottom {
+                grid-column: 1 / -1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                margin-top: 15px;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-    <main class="portfolio">
-        <nav class="navbar glitch">
-            <a href="#about-me" class="nav-about-me"> About Me </a>
-            <a href="#skills" class="nav-skills">Skills</a>
-            <a href="#projects" class="nav-projects">Projects</a>
-            <a href="#blogs" class="nav-blogs">Blogs</a>
-            <a href="#certificates" class="nav-experience">Experience</a>
-            <a href="#education" class="nav-education">Education</a>
-        </nav>
 
-        <!-- navbar, hero section and title -->
-        <header>
+    <canvas id="matrix"></canvas>
+    <div id="hacked-banner" aria-hidden="true">
+        <div class="box">
+            <h1 id="typed-text"></h1>
+        </div>
+    </div>
 
-            <section class="hero-section">
-                <div class="title-wrap">
-                    <div class="brand">
-                        <span class="dot"></span>
-                        <h1 class="port-title glitch">
-                            Nashra — offensive-minded dev & bug hunter<span class="blink">_</span>
-                        </h1>
+    <body>
+        <main class="portfolio">
+            <nav class="navbar glitch">
+                <a href="#about-me" class="nav-about-me"> About Me </a>
+                <a href="#skills" class="nav-skills">Skills</a>
+                <a href="#projects" class="nav-projects">Projects</a>
+                <a href="#blogs" class="nav-blogs">Blogs</a>
+                <a href="#certificates" class="nav-experience">Experience</a>
+                <a href="#education" class="nav-education">Education</a>
+            </nav>
+
+            <!-- navbar, hero section and title -->
+            <header>
+
+                <section class="hero-section">
+                    <div class="title-wrap">
+                        <div class="brand">
+                            <span class="dot"></span>
+                            <h1 class="port-title glitch">
+                                Nashra — offensive-minded dev & bug hunter<span class="blink">_</span>
+                            </h1>
+                        </div>
+                        <h3 class="flicker">• Hacker • Pentester</h3>
                     </div>
-                    <h3 class="flicker">• Hacker • Pentester</h3>
-                </div>
-            </section>
-        </header>
+                </section>
+            </header>
 
-        <div class="content">
-            <!-- About -->
-            <section class="about-section" id="about-me">
-                <div class="image">
-                    <div class="symbol flicker"></div>
-                    <h3 class="flicker">About Me</h3>
-                </div>
-                <div class="about">
-                    <div class="about-me card">
-                        <p> <span class="glitch">Identity</span>: Nashra Fayyaz <span class="blink">_</span></p>
-                        <p> <span class="glitch">Objective</span>: Highly motivated Cybersecurity professional with
-                            a
-                            strong
-                            foundation in Information Security. <br><br>A fast learner with strong analytical,
-                            communication,
-                            and problem-solving skills, poised to contribute to and advance in cybersecurity. <span
-                                class="blink">_</span></p>
-                        <p> <span class="glitch">Status</span>: Evolving <span class="blink">_</span> </p>
-                        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1749769"
-                            loading="lazy" class="about-tryhackme-badge"></iframe>
+            <div class="content">
+                <!-- About -->
+                <section class="about-section" id="about-me">
+                    <div class="image">
+                        <div class="symbol flicker"></div>
+                        <h3 class="flicker">About Me</h3>
+                    </div>
+                    <div class="about">
+                        <div class="about-me card">
+                            <p> <span class="glitch">Identity</span>: Nashra Fayyaz <span class="blink">_</span></p>
+                            <p> <span class="glitch">Objective</span>: Highly motivated Cybersecurity professional with
+                                a
+                                strong
+                                foundation in Information Security. <br><br>A fast learner with strong analytical,
+                                communication,
+                                and problem-solving skills, poised to contribute to and advance in cybersecurity. <span
+                                    class="blink">_</span></p>
+                            <p> <span class="glitch">Status</span>: Evolving <span class="blink">_</span> </p>
+                            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1749769"
+                                loading="lazy" class="about-tryhackme-badge"></iframe>
+                        </div>
+
+                        <div class="about-contact card">
+                            <div class="image">
+                                <div class="symbol flicker"></div>
+                                <h3 class="flicker">Contact</h3>
+                            </div>
+                            <div class="contact-card">
+                                <div class="flicker">
+                                    <i class="fa-solid fa-inbox"></i>
+                                </div>
+                                <div class=" contact-info">
+                                    <h3 class="glitch">Email</h3>
+                                    <p>
+                                        bugnashbug@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="flicker">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class=" contact-info">
+                                    <h3 class="glitch">LinkedIn</h3>
+                                    <p><a href="https://www.linkedin.com/in/cybersecurity9865/" target="_blank"
+                                            rel="noopener noreferrer"
+                                            style="color: var(--muted);text-decoration: none;">Contact
+                                            Me
+                                        </a></p>
+                                </div>
+
+                            </div>
+                            <div class="contact-card">
+                                <div class="flicker">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class=" contact-info">
+                                    <h3 class="glitch">GitHub</h3>
+                                    <p><a href="https://github.com/nashra208" target="_blank" rel="noopener noreferrer"
+                                            style="color: var(--muted);text-decoration: none;">Check my passion
+                                        </a></p>
+                                </div>
+
+                            </div>
+                            <div class="contact-card">
+                                <div class="flicker">
+                                    <i class="fa-brands fa-medium"></i>
+                                </div>
+                                <div class=" contact-info">
+                                    <h3 class="glitch">Medium</h3>
+                                    <p><a href="https://medium.com/@nashra432" target="_blank" rel="noopener noreferrer"
+                                            style="color: var(--muted);text-decoration: none;">Check my writeups
+                                        </a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- skills -->
+                <section class="skills-section" id="skills">
+                    <div class="image">
+                        <div class="symbol flicker"></div>
+                        <h3 class="flicker">Skills</h3>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_gif"></div>
+                        <ul class="skill_items">
+
+                            <!-- 🔥 Languages -->
+                            <h3 class="glitch"
+                                style="width:100%; color:var(--neon); text-align:center; margin-top:10px;">
+                                Languages</h3>
+                            <img
+                                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+
+                            <img
+                                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+                            <img
+                                src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=database&logoColor=white" />
+
+                            <!-- 🔥 Tools -->
+                            <h3 class="glitch"
+                                style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
+                                Tools</h3>
+                            <img
+                                src="https://img.shields.io/badge/BurpSuite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/FFUF-557C94?style=for-the-badge&logo=ffuf&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=nmap&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Hydra-333333?style=for-the-badge&logo=gnu&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/VirusTotal-394EFF?style=for-the-badge&logo=virustotal&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+
+                            <!-- 🔥 Operating Systems -->
+                            <h3 class="glitch"
+                                style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
+                                Operating Systems
+                            </h3>
+                            <img
+                                src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
+
+                            <!-- 🔥 Frameworks & Standards -->
+                            <h3 class="glitch"
+                                style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
+                                Frameworks</h3>
+                            <img
+                                src="https://img.shields.io/badge/OWASP_Top_10-000000?style=for-the-badge&logo=owasp&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/MITRE_ATT&CK-E34F26?style=for-the-badge&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/NIST-CSF-205493?style=for-the-badge&logoColor=white" />
+                            <img
+                                src="https://img.shields.io/badge/ISO_27001-003B5C?style=for-the-badge&logoColor=white" />
+
+                            <!-- 🔥 Soft Skills -->
+                            <h3 class="glitch"
+                                style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
+                                Soft Skills</h3>
+
+                            <img src="https://img.shields.io/badge/Mentoring-6A5ACD?style=for-the-badge" />
+                            <img src="https://img.shields.io/badge/Communication-1E90FF?style=for-the-badge" />
+                            <img src="https://img.shields.io/badge/Problem%20Solving-32CD32?style=for-the-badge" />
+                            <img src="https://img.shields.io/badge/Adaptability-FF8C00?style=for-the-badge" />
+                            <img src="https://img.shields.io/badge/Time%20Management-DC143C?style=for-the-badge" />
+
+                        </ul>
+
+                    </div>
+                </section>
+                <!-- Projects -->
+                <section class="project-section" id="projects">
+                    <div class="image">
+                        <div class="symbol flicker"></div>
+                        <h3 class="flicker">Projects</h3>
                     </div>
 
-                    <div class="about-contact card">
-                        <div class="image">
-                            <div class="symbol flicker"></div>
-                            <h3 class="flicker">Contact</h3>
-                        </div>
-                        <div class="contact-card">
-                            <div class="flicker">
-                                <i class="fa-solid fa-inbox"></i>
-                            </div>
-                            <div class=" contact-info">
-                                <h3 class="glitch">Email</h3>
-                                <p>
-                                    bugnashbug@gmail.com
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="flicker">
-                                <i class="fab fa-linkedin-in"></i>
-                            </div>
-                            <div class=" contact-info">
-                                <h3 class="glitch">LinkedIn</h3>
-                                <p><a href="https://www.linkedin.com/in/cybersecurity9865/" target="_blank"
-                                        rel="noopener noreferrer"
-                                        style="color: var(--muted);text-decoration: none;">Contact
-                                        Me
-                                    </a></p>
-                            </div>
+                    <div class="projects">
+                        <div class="card reveal project-card">
+                            <h3 class="flicker">🕷️ Web Application Penetration Test – OWASP Juice Shop</h3>
+                            <p class="project-desc">
+                                • Conducted a full-scope web application penetration test following standard
+                                methodology:
+                                Enumeration → Discovery → Exploitation → Remediation. <span class="blink">_</span>
+                                <br><br>
+
+                                • Identified and exploited critical vulnerabilities including SQL Injection
+                                (authentication bypass, data extraction, business logic abuse),
+                                Broken Access Control (IDOR, admin panel exposure),
+                                and HTTP Parameter Pollution. <span class="blink">_</span>
+                                <br><br>
+                                • Delivered a professional penetration testing report with clear POCs,
+                                impact analysis, severity ratings, and security-focused remediation guidance,
+                                aligned with OWASP Top 10 risks. <span class="blink">_</span>
+                                <br><br>
+                            </p>
+                            <a href="https://medium.com/@nashra432/web-application-penetration-report-92dc2d48cfdf"
+                                class="project-card-btn-a " target="_blank">
+                                <button class="project-card-button glitch">Click Me <span
+                                        class="blink">_</span></button>
+                            </a>
+
 
                         </div>
-                        <div class="contact-card">
-                            <div class="flicker">
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <div class=" contact-info">
-                                <h3 class="glitch">GitHub</h3>
-                                <p><a href="https://github.com/nashra208" target="_blank" rel="noopener noreferrer"
-                                        style="color: var(--muted);text-decoration: none;">Check my passion
-                                    </a></p>
-                            </div>
+                        <div class="card reveal project-card">
+                            <h3 class="flicker">😈 1337-Active Directory</h3>
+                            <p class="project-desc">
+                                • Built a complete Active Directory lab with a domain controller, multiple user
+                                machines,
+                                and Kali Linux as the attack platform. <span class="blink">_</span>
+                                <br><br>
+
+                                • Executed 10+ real-world attacks including LLMNR/NBT-NS poisoning, SMB relay, IPv6 DNS
+                                takeover, pass-the-hash, pass-the-password, and Kerberoasting.<span
+                                    class="blink">_</span>
+                                <br><br>
+
+                                • Implemented Active Directory hardening policies and security controls, mitigating
+                                approximately 80% of tested attack vectors.<span class="blink">_</span> <br><br>
+
+
+                            </p>
+                            <a href="https://medium.com/@nashra432/active-directory-lab-and-attacks-from-beginner-to-intermediate-d3234deb7c2d"
+                                class="project-card-btn-a " target="_blank">
+                                <button class="project-card-button glitch">Click Me <span
+                                        class="blink">_</span></button>
+                            </a>
+
 
                         </div>
-                        <div class="contact-card">
-                            <div class="flicker">
-                                <i class="fa-brands fa-medium"></i>
-                            </div>
-                            <div class=" contact-info">
-                                <h3 class="glitch">Medium</h3>
-                                <p><a href="https://medium.com/@nashra432" target="_blank" rel="noopener noreferrer"
-                                        style="color: var(--muted);text-decoration: none;">Check my writeups
-                                    </a></p>
-                            </div>
+
+                        <!-- SubVoid Project -->
+                        <div class="card reveal project-card">
+                            <h3 class="flicker">👾 SubVoid</h3>
+                            <p class="project-desc">
+                                • Developed a Bash-based automation tool integrating Subfinder, Assetfinder, and Httpx,
+                                reducing manual reconnaissance effort by ~95%. <span class="blink">_</span>
+                                <br><br>
+
+                                • Implemented domain validation, dependency checks, safe exits, structured timestamped
+                                workspaces, and multi-port scanning for large-scale discovery.<span
+                                    class="blink">_</span>
+                                <br><br>
+
+                                • Added CLI arguments, result sorting and deduplication, and optional Discord webhook
+                                alerts
+                                to improve usability and workflow efficiency. <span class="blink">_</span> <br><br>
+                            </p>
+                            <a href="https://github.com/nashra208/SubVoid" class="project-card-btn-a " target="_blank">
+                                <button class="project-card-button glitch">Click Me <span
+                                        class="blink">_</span></button>
+                            </a>
+
 
                         </div>
+                        <div class="card reveal project-card">
+                            <h3 class="flicker">🧟‍♂️ Monster_logger</h3>
+                            <p class="project-desc">
+                                • Implemented keystroke logging with special key handling and clipboard monitoring (text
+                                and
+                                images) using state-based duplicate prevention (~90%).
+                                <span class="blink">_</span>
+                                <br><br>
+
+                                • Extracted Windows WLAN credential information with controlled execution and an
+                                emergency
+                                F12 kill switch.<span class="blink">_</span> <br><br>
+
+                                • Performed structured data exfiltration via Discord webhooks, handling both JSON data
+                                and
+                                binary image uploads. <span class="blink">_</span> <br><br>
+
+
+                            </p>
+                            <a href="https://github.com/nashra208/Monster_logger" class="project-card-btn-a "
+                                target="_blank">
+                                <button class="project-card-button glitch">Click Me <span
+                                        class="blink">_</span></button>
+                            </a>
+
+
+                        </div>
+
+                        <div class="card reveal project-card">
+                            <h3 class="glitch project-heading">Banger revealing soon</h3>
+                            <img src="unique.gif" alt="">
+                        </div>
+
                     </div>
-                </div>
-            </section>
-            <!-- skills -->
-            <section class="skills-section" id="skills">
-                <div class="image">
-                    <div class="symbol flicker"></div>
-                    <h3 class="flicker">Skills</h3>
-                </div>
-                <div class="skills">
-                    <div class="skill_gif"></div>
-                    <ul class="skill_items">
-
-                        <!-- 🔥 Languages -->
-                        <h3 class="glitch" style="width:100%; color:var(--neon); text-align:center; margin-top:10px;">
-                            Languages</h3>
-                        <img
-                            src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-
-                        <img
-                            src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-                        <img
-                            src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=database&logoColor=white" />
-
-                        <!-- 🔥 Tools -->
-                        <h3 class="glitch" style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
-                            Tools</h3>
-                        <img
-                            src="https://img.shields.io/badge/BurpSuite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/FFUF-557C94?style=for-the-badge&logo=ffuf&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=nmap&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Hydra-333333?style=for-the-badge&logo=gnu&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/VirusTotal-394EFF?style=for-the-badge&logo=virustotal&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-
-                        <!-- 🔥 Operating Systems -->
-                        <h3 class="glitch" style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
-                            Operating Systems
-                        </h3>
-                        <img
-                            src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
-
-                        <!-- 🔥 Frameworks & Standards -->
-                        <h3 class="glitch" style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
-                            Frameworks</h3>
-                        <img
-                            src="https://img.shields.io/badge/OWASP_Top_10-000000?style=for-the-badge&logo=owasp&logoColor=white" />
-                        <img
-                            src="https://img.shields.io/badge/MITRE_ATT&CK-E34F26?style=for-the-badge&logoColor=white" />
-                        <img src="https://img.shields.io/badge/NIST-CSF-205493?style=for-the-badge&logoColor=white" />
-                        <img src="https://img.shields.io/badge/ISO_27001-003B5C?style=for-the-badge&logoColor=white" />
-
-                        <!-- 🔥 Soft Skills -->
-                        <h3 class="glitch" style="width:100%; color:var(--neon); text-align:center; margin-top:20px;">
-                            Soft Skills</h3>
-
-                        <img src="https://img.shields.io/badge/Mentoring-6A5ACD?style=for-the-badge" />
-                        <img src="https://img.shields.io/badge/Communication-1E90FF?style=for-the-badge" />
-                        <img src="https://img.shields.io/badge/Problem%20Solving-32CD32?style=for-the-badge" />
-                        <img src="https://img.shields.io/badge/Adaptability-FF8C00?style=for-the-badge" />
-                        <img src="https://img.shields.io/badge/Time%20Management-DC143C?style=for-the-badge" />
-
-                    </ul>
-
-                </div>
-            </section>
-            <!-- Projects -->
-            <section class="project-section" id="projects">
-                <div class="image">
-                    <div class="symbol flicker"></div>
-                    <h3 class="flicker">Projects</h3>
-                </div>
-
-                <div class="projects">
-                    <div class="card reveal project-card">
-                        <h3 class="flicker">🕷️ Web Application Penetration Test – OWASP Juice Shop</h3>
-                        <p class="project-desc">
-                            • Conducted a full-scope web application penetration test following standard methodology:
-                            Enumeration → Discovery → Exploitation → Remediation. <span class="blink">_</span>
-                            <br><br>
-
-                            • Identified and exploited critical vulnerabilities including SQL Injection
-                            (authentication bypass, data extraction, business logic abuse),
-                            Broken Access Control (IDOR, admin panel exposure),
-                            and HTTP Parameter Pollution. <span class="blink">_</span>
-                            <br><br>
-                            • Delivered a professional penetration testing report with clear POCs,
-                            impact analysis, severity ratings, and security-focused remediation guidance,
-                            aligned with OWASP Top 10 risks. <span class="blink">_</span>
-                            <br><br>
+                </section>
+                <!-- blog -->
+                <section class="blog-section" id="blogs">
+                    <div class="image">
+                        <div class="symbol flicker"></div>
+                        <h3 class="flicker">Blogs</h3>
+                    </div>
+                    <div class="blog-link-section">
+                        <h3 class="blog-link-section-heading glitch" style="margin: 20px;">TryHackMe</h3>
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/intranet-tryhackme-challenge-walkthrough-f644cb785a28"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                1. Intranet <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
+                                    alt="" style="width: 70px; height: 25px;"> >> November 2025
+                                <span class="blog-badge">reverse shell</span><span class="blog-badge">LFI</span><span
+                                    class="blog-badge">RCE</span><span class="blog-badge">Linux Privilege
+                                    Escalation</span>
+                            </a>
                         </p>
-                        <a href="https://medium.com/@nashra432/web-application-penetration-report-92dc2d48cfdf"
-                            class="project-card-btn-a " target="_blank">
-                            <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
-                        </a>
-
-
-                    </div>
-                    <div class="card reveal project-card">
-                        <h3 class="flicker">😈 1337-Active Directory</h3>
-                        <p class="project-desc">
-                            • Built a complete Active Directory lab with a domain controller, multiple user machines,
-                            and Kali Linux as the attack platform. <span class="blink">_</span>
-                            <br><br>
-
-                            • Executed 10+ real-world attacks including LLMNR/NBT-NS poisoning, SMB relay, IPv6 DNS
-                            takeover, pass-the-hash, pass-the-password, and Kerberoasting.<span class="blink">_</span>
-                            <br><br>
-
-                            • Implemented Active Directory hardening policies and security controls, mitigating
-                            approximately 80% of tested attack vectors.<span class="blink">_</span> <br><br>
-
-
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/royal-router-tryhackme-challenge-walkthrough-b52024847430"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                2. Scripting <img
+                                    src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge" alt=""
+                                    style="width: 70px; height: 25px;"> >> October 2025
+                                <span class="blog-badge">Python</span>
+                            </a>
                         </p>
-                        <a href="https://medium.com/@nashra432/active-directory-lab-and-attacks-from-beginner-to-intermediate-d3234deb7c2d"
-                            class="project-card-btn-a " target="_blank">
-                            <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
-                        </a>
-
-
-                    </div>
-
-                    <!-- SubVoid Project -->
-                    <div class="card reveal project-card">
-                        <h3 class="flicker">👾 SubVoid</h3>
-                        <p class="project-desc">
-                            • Developed a Bash-based automation tool integrating Subfinder, Assetfinder, and Httpx,
-                            reducing manual reconnaissance effort by ~95%. <span class="blink">_</span>
-                            <br><br>
-
-                            • Implemented domain validation, dependency checks, safe exits, structured timestamped
-                            workspaces, and multi-port scanning for large-scale discovery.<span class="blink">_</span>
-                            <br><br>
-
-                            • Added CLI arguments, result sorting and deduplication, and optional Discord webhook alerts
-                            to improve usability and workflow efficiency. <span class="blink">_</span> <br><br>
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/royal-router-tryhackme-challenge-walkthrough-b52024847430"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                3. Royal Router <img
+                                    src="https://img.shields.io/badge/HARD-%23FF0000?style=for-the-badge" alt=""
+                                    style="width: 50px; height: 25px;"> >> October 2025
+                                <span class="blog-badge">IOT</span>
+                            </a>
                         </p>
-                        <a href="https://github.com/nashra208/SubVoid" class="project-card-btn-a " target="_blank">
-                            <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
-                        </a>
-
-
-                    </div>
-                    <div class="card reveal project-card">
-                        <h3 class="flicker">🧟‍♂️ Monster_logger</h3>
-                        <p class="project-desc">
-                            • Implemented keystroke logging with special key handling and clipboard monitoring (text and
-                            images) using state-based duplicate prevention (~90%).
-                            <span class="blink">_</span>
-                            <br><br>
-
-                            • Extracted Windows WLAN credential information with controlled execution and an emergency
-                            F12 kill switch.<span class="blink">_</span> <br><br>
-
-                            • Performed structured data exfiltration via Discord webhooks, handling both JSON data and
-                            binary image uploads. <span class="blink">_</span> <br><br>
-
-
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/pyrat-tryhackme-challenge-walkthrough-2840f363f94d"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                4. Pyrat <img src="https://img.shields.io/badge/EASY-%2300FF00?style=for-the-badge"
+                                    alt="" style="width: 60px; height: 25px;"> >> October 2025
+                                <span class="blog-badge">nmap</span><span class="blog-badge">netcat</span><span
+                                    class="blog-badge">python</span><span class="blog-badge">Linux Privilege
+                                    Escalation</span>
+                            </a>
                         </p>
-                        <a href="https://github.com/nashra208/Monster_logger" class="project-card-btn-a "
-                            target="_blank">
-                            <button class="project-card-button glitch">Click Me <span class="blink">_</span></button>
-                        </a>
-
-
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/carnage-tryhackme-room-35f821f3af6e" target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                5. Carnage <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
+                                    alt="" style="width: 70px; height: 25px;"> >> September 2025 <span
+                                    class="blog-badge">
+                                    Wireshark</span><span class="blog-badge">virustotal</span>
+                            </a>
+                        </p>
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/warzone-1-tryhackme-walkthrough-797137fbea3c"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                6. Warzone 1 <img
+                                    src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge" alt=""
+                                    style="width: 70px; height: 25px;"> >> September 2025 <span class="blog-badge">
+                                    Wireshark</span><span class="blog-badge">Brim</span><span
+                                    class="blog-badge">Virustotal</span>
+                            </a>
+                        </p>
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/warzone-2-tryhackme-walkthrough-d55a5ee88e3d"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                7. Warzone 2 <img
+                                    src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge" alt=""
+                                    style="width: 70px; height: 25px;"> >> September 2025 <span class="blog-badge">
+                                    Wireshark</span><span class="blog-badge">Brim</span><span
+                                    class="blog-badge">Virustotal</span>
+                            </a>
+                        </p>
+                        <p class="blog-link">
+                            <a href="https://medium.com/@nashra432/warzone-2-tryhackme-walkthrough-d55a5ee88e3d"
+                                target="_blank">
+                                <img src="link.png" class="link-img" alt="link icon" />
+                                8. ToolsRUs <img src="https://img.shields.io/badge/EASY-%2300FF00?style=for-the-badge"
+                                    alt="" style="width: 60px; height: 25px;"> >> September 2025 <span
+                                    class="blog-badge">Dirbuster</span><span class="blog-badge">Hydra</span><span
+                                    class="blog-badge">Nmap</span><span class="blog-badge">Nikto</span><span
+                                    class="blog-badge">Metasploit</span>
+                            </a>
+                        </p>
                     </div>
+                </section>
+                <section class="certificates-section" id="certificates">
+                    <div class="image">
+                        <div class="symbol flicker"></div>
+                        <h3 class="flicker">Experience</h3>
+                    </div>
+                    <div class="certificates card">
+                        <div class="cert" style="background-image: url('spta_math.png');"></div>
+                        <div class="cert" style="background-image: url('spta_eng.png');"></div>
+                        <div class="cert" style="background-image: url('Internship.png');"></div>
+                        <div class="cert" style="background-image: url('forage_internship.png');"></div>
+                        <div class="cert" style="background-image: url('Cybersecurity\ 101.png');"></div>
+                        <div class="cert" style="background-image: url('PreSecurity.png');"></div>
+                    </div>
+                </section>
+                <section class="education-section" id="education">
+                    <div class="image">
+                        <div class="symbol flicker"></div>
+                        <h3 class="flicker">Education</h3>
+                    </div>
+                    <div class="education card">
+                        <div class="education-logo"></div>
 
-                    <div class="card reveal project-card">
-                        <h3 class="glitch project-heading">Banger revealing soon</h3>
-                        <img src="unique.gif" alt="">
-                    </div> 
-
-                </div>
-            </section>
-            <!-- blog -->
-            <section class="blog-section" id="blogs">
-                <div class="image">
-                    <div class="symbol flicker"></div>
-                    <h3 class="flicker">Blogs</h3>
-                </div>
-                <div class="blog-link-section">
-                    <h3 class="blog-link-section-heading glitch" style="margin: 20px;">TryHackMe</h3>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/intranet-tryhackme-challenge-walkthrough-f644cb785a28"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            1. Intranet <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
-                                alt="" style="width: 70px; height: 25px;"> >> November 2025
-                            <span class="blog-badge">reverse shell</span><span class="blog-badge">LFI</span><span
-                                class="blog-badge">RCE</span><span class="blog-badge">Linux Privilege
-                                Escalation</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/royal-router-tryhackme-challenge-walkthrough-b52024847430"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            2. Scripting <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
-                                alt="" style="width: 70px; height: 25px;"> >> October 2025
-                            <span class="blog-badge">Python</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/royal-router-tryhackme-challenge-walkthrough-b52024847430"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            3. Royal Router <img src="https://img.shields.io/badge/HARD-%23FF0000?style=for-the-badge"
-                                alt="" style="width: 50px; height: 25px;"> >> October 2025
-                            <span class="blog-badge">IOT</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/pyrat-tryhackme-challenge-walkthrough-2840f363f94d"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            4. Pyrat <img src="https://img.shields.io/badge/EASY-%2300FF00?style=for-the-badge" alt=""
-                                style="width: 60px; height: 25px;"> >> October 2025
-                            <span class="blog-badge">nmap</span><span class="blog-badge">netcat</span><span
-                                class="blog-badge">python</span><span class="blog-badge">Linux Privilege
-                                Escalation</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/carnage-tryhackme-room-35f821f3af6e" target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            5. Carnage <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
-                                alt="" style="width: 70px; height: 25px;"> >> September 2025 <span class="blog-badge">
-                                Wireshark</span><span class="blog-badge">virustotal</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/warzone-1-tryhackme-walkthrough-797137fbea3c"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            6. Warzone 1 <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
-                                alt="" style="width: 70px; height: 25px;"> >> September 2025 <span class="blog-badge">
-                                Wireshark</span><span class="blog-badge">Brim</span><span
-                                class="blog-badge">Virustotal</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/warzone-2-tryhackme-walkthrough-d55a5ee88e3d"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            7. Warzone 2 <img src="https://img.shields.io/badge/MEDIUM-%23FFA500?style=for-the-badge"
-                                alt="" style="width: 70px; height: 25px;"> >> September 2025 <span class="blog-badge">
-                                Wireshark</span><span class="blog-badge">Brim</span><span
-                                class="blog-badge">Virustotal</span>
-                        </a>
-                    </p>
-                    <p class="blog-link">
-                        <a href="https://medium.com/@nashra432/warzone-2-tryhackme-walkthrough-d55a5ee88e3d"
-                            target="_blank">
-                            <img src="link.png" class="link-img" alt="link icon" />
-                            8. ToolsRUs <img src="https://img.shields.io/badge/EASY-%2300FF00?style=for-the-badge"
-                                alt="" style="width: 60px; height: 25px;"> >> September 2025 <span
-                                class="blog-badge">Dirbuster</span><span class="blog-badge">Hydra</span><span
-                                class="blog-badge">Nmap</span><span class="blog-badge">Nikto</span><span
-                                class="blog-badge">Metasploit</span>
-                        </a>
-                    </p>
-                </div>
-            </section>
-            <section class="certificates-section" id="certificates">
-                <div class="image">
-                    <div class="symbol flicker"></div>
-                    <h3 class="flicker">Experience</h3>
-                </div>
-                <div class="certificates card">
-                    <div class="cert" style="background-image: url('spta_math.png');"></div>
-                    <div class="cert" style="background-image: url('spta_eng.png');"></div>
-                    <div class="cert" style="background-image: url('Internship.png');"></div>
-                    <div class="cert" style="background-image: url('forage_internship.png');"></div>
-                    <div class="cert" style="background-image: url('Cybersecurity\ 101.png');"></div>
-                    <div class="cert" style="background-image: url('PreSecurity.png');"></div>
-                </div>
-            </section>
-            <section class="education-section" id="education">
-                <div class="image">
-                    <div class="symbol flicker"></div>
-                    <h3 class="flicker">Education</h3>
-                </div>
-                <div class="education card">
-                    <div class="education-logo"></div>
-
-                    <div class="education-details">
-                        <pre>
+                        <div class="education-details">
+                            <pre>
                     kali@kali
                     ---------
                 OS: Kali GNU/Linux Rolling x86_64
@@ -1164,27 +1241,92 @@
                       University of Sunderland
                       MAR 2019 – MAR 2022
                     </pre>
+                        </div>
+
+                        <div class="education-bottom">
+                            <span>[Overgraph]</span>
+                            <span>0:vpn- 1: scanning<span class="blink">*</span></span>
+                            <span>10.10.14.26</span>
+                            <span>10.10.11.157</span>
+                        </div>
                     </div>
 
-                    <div class="education-bottom">
-                        <span>[Overgraph]</span>
-                        <span>0:vpn- 1: scanning<span class="blink">*</span></span>
-                        <span>10.10.14.26</span>
-                        <span>10.10.11.157</span>
-                    </div>
-                </div>
+                </section>
 
-            </section>
+            </div>
 
-        </div>
+            <footer>
+                <small>
+                    <small>Made with ⚡skills | Fueled by ☕ coffee & 🚀 dreams _> Nashra Fayyaz </small>
+                </small>
+            </footer>
+        </main>
 
-        <footer>
-            <small>
-                <small>Made with ⚡skills | Fueled by ☕ coffee & 🚀 dreams _> Nashra Fayyaz </small>
-            </small>
-        </footer>
-    </main>
+    </body>
+
+    <script defer>
+        const canvas = document.getElementById("matrix");
+        const ctx = canvas.getContext("2d");
+        const banner = document.getElementById("hacked-banner");
+        const typedText = document.getElementById("typed-text");
+        const portfolio = document.querySelector(".portfolio");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const letters = "010001010カХакер001010カХакер";
+        const fontSize = 17;
+        const columns = Math.floor(canvas.width / fontSize);
+        const drops = Array(columns).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.06)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#0F0";
+            ctx.font = fontSize + "px monospace";
+
+            drops.forEach((y, i) => {
+                const text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillText(text, i * fontSize, y * fontSize);
+                drops[i]++;
+                if (y * fontSize > canvas.height && Math.random() > 0.98) {
+                    drops[i] = 0;
+                }
+            });
+        }
+
+        const interval = setInterval(drawMatrix, 33);
+
+        /* 🔥 TYPEWRITER EFFECT */
+        const message = "YOU HAVE BEEN HACKED !";
+        let index = 0;
+
+        function typeText() {
+            if (index < message.length) {
+                typedText.textContent += message[index];
+                index++;
+                setTimeout(typeText, 50);
+            }
+        }
+
+      
+        setTimeout(() => {
+            banner.style.opacity = "1";
+            typeText();
+        }, 1500);
+
+        setTimeout(() => {
+            banner.style.opacity = "0";
+        }, 2800);
+
+        
+        setTimeout(() => {
+            clearInterval(interval);
+            canvas.style.display = "none";
+            portfolio.style.display = "block";
+        }, 3000);
+    </script>
+
 
 </body>
-
-</html>
